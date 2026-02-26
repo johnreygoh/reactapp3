@@ -13,17 +13,25 @@ import FetchDemo from './pages/FetchDemo'
 import AxiosDemo from './pages/AxiosDemo'
 import AsyncDemo from './pages/AsyncDemo'
 import ReduxToolkitDemo from './pages/ReduxToolkitDemo'
+import ZustandDemo from './pages/ZustandDemo'
+import StatBox from './optimization/Reactmemo'
 
 export const cartContext = createContext();
 
 function App() {
 
+  const [timer, setTimer] = useState(0);
   const [cartCounter, setCartCounter] = useState(0);
   const addCart = () => setCartCounter(cartCounter + 1);
 
 
   return (
     <>
+      <div>
+        <button onClick={() => setTimer(timer + 1)}>Tick: {timer}</button>
+        {/* StatBox won't re-render on every tick, because its props don't change */}
+        <StatBox title="High Score" value={949} />
+      </div>
 
       <cartContext.Provider value={{ cartCounter, addCart }}>
         <BrowserRouter>
@@ -41,6 +49,7 @@ function App() {
             <Route path="/AxiosDemo" element={<AxiosDemo />} />
             <Route path="/AsyncDemo" element={<AsyncDemo />} />
             <Route path="/ReduxToolkitDemo" element={<ReduxToolkitDemo />} />
+            <Route path="/ZustandDemo" element={<ZustandDemo />} />
           </Routes>
         </BrowserRouter>
       </cartContext.Provider>

@@ -31,7 +31,7 @@ function Navbar() {
             <NavLink to="/AxiosDemo" style={checkActive}>AxiosDemo</NavLink>
             <NavLink to="/AsyncDemo" style={checkActive}>AsyncDemo</NavLink>
             <NavLink to="/ReduxToolkitDemo" style={checkActive}>ReduxToolkitDemo</NavLink>
-
+            <NavLink to="/ZustandDemo" style={checkActive}>ZustandDemo</NavLink>
             <h4>🛒{cartCounter}</h4>
         </nav>
     );
