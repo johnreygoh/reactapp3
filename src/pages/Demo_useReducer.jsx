@@ -40,40 +40,44 @@ function Demo_useReducer() {
                 <input type='text'
                     name='firstname'
                     value={state.firstname}
-                    onChange={(e) => dispatch(type = 'INPUT_CHANGE',
-                        field = e.target.name,
-                        value = e.target.value
-                    )}
+                    onChange={(e) => dispatch({
+                        type: 'INPUT_CHANGE',
+                        field: e.target.name,
+                        value: e.target.value
+                    })}
                 />
                 <br />
                 Lastname
                 <input type='text'
                     name='lastname'
                     value={state.lastname}
-                    onChange={(e) => dispatch(type = 'INPUT_CHANGE',
-                        field = e.target.name,
-                        value = e.target.value
-                    )}
+                    onChange={(e) => dispatch({
+                        type: 'INPUT_CHANGE',
+                        field: e.target.name,
+                        value: e.target.value
+                    })}
                 />
                 <br />
                 Department
                 <input type='text'
                     name='department'
                     value={state.department}
-                    onChange={(e) => dispatch(type = 'INPUT_CHANGE',
-                        field = e.target.name,
-                        value = e.target.value
-                    )}
+                    onChange={(e) => dispatch({
+                        type: 'INPUT_CHANGE',
+                        field: e.target.name,
+                        value: e.target.value
+                    })}
                 />
                 <br />
                 Email
                 <input type='text'
                     name='email'
                     value={state.email}
-                    onChange={(e) => dispatch(type = 'INPUT_CHANGE',
-                        field = e.target.name,
-                        value = e.target.value
-                    )}
+                    onChange={(e) => dispatch({
+                        type: 'INPUT_CHANGE',
+                        field: e.target.name,
+                        value: e.target.value
+                    })}
                 />
                 <br />
                 <button type="submit">Submit</button>
