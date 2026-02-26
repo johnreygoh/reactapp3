@@ -6,7 +6,7 @@ import Home from './pages/Home'
 import About from './pages/About'
 import Contact from './pages/Contact'
 import Demo_useContext from './pages/Demo_useContext'
-
+import Demo_useReducer from './pages/Demo_useReducer'
 
 export const cartContext = createContext();
 
@@ -27,6 +27,8 @@ function App() {
             <Route path="/About" element={<About />} />
             <Route path="/Contact" element={<Contact />} />
             <Route path="/Demo_useContext" element={<Demo_useContext />} />
+            <Route path="/Demo_useReducer" element={<Demo_useReducer />} />
+
           </Routes>
         </BrowserRouter>
       </cartContext.Provider>
