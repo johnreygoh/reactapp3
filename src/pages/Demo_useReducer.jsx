@@ -11,7 +11,7 @@ const initialState = {
 // create reducer function
 function formReducer(state, action) {
     switch (action.type) {
-        case 'INPUT_CHANGE':
+        case 'INPUT_MOD':
             return {
                 ...state,
                 [action.field]: action.value
@@ -32,7 +32,7 @@ function Demo_useReducer() {
     const handleChange = (e) => {
 
         dispatch({
-            type: 'INPUT_CHANGE',
+            type: 'INPUT_MOD',
             field: e.target.name,
             value: e.target.value
         })
@@ -66,7 +66,7 @@ function Demo_useReducer() {
                 <input type='text'
                     name='department'
                     value={state.department}
-                    onChange={handle}
+                    onChange={handleChange}
                 />
                 <br />
                 Email

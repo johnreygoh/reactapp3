@@ -26,6 +26,7 @@ function Navbar() {
             <NavLink to="/Contact" style={checkActive}>Contact</NavLink>
             <NavLink to="/Demo_useContext" style={checkActive}>useContext</NavLink>
             <NavLink to="/Demo_useReducer" style={checkActive}>useReducer</NavLink>
+            <NavLink to="/CustomHooks" style={checkActive}>CustomHooks</NavLink>
 
             <h4>🛒{cartCounter}</h4>
         </nav>

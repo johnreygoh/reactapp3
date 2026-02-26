@@ -7,6 +7,8 @@ import About from './pages/About'
 import Contact from './pages/Contact'
 import Demo_useContext from './pages/Demo_useContext'
 import Demo_useReducer from './pages/Demo_useReducer'
+import ReducerDemo2 from './components/ReducerDemo2'
+import CustomHooks from './pages/CustomHooks'
 
 export const cartContext = createContext();
 
@@ -18,6 +20,7 @@ function App() {
 
   return (
     <>
+
       <cartContext.Provider value={{ cartCounter, addCart }}>
         <BrowserRouter>
           <Navbar />
@@ -28,6 +31,8 @@ function App() {
             <Route path="/Contact" element={<Contact />} />
             <Route path="/Demo_useContext" element={<Demo_useContext />} />
             <Route path="/Demo_useReducer" element={<Demo_useReducer />} />
+            <Route path="/Demo_useReducer/2" element={<ReducerDemo2 />} />
+            <Route path="/CustomHooks" element={<CustomHooks />} />
 
           </Routes>
         </BrowserRouter>
