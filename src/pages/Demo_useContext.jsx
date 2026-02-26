@@ -1,5 +1,6 @@
 import { useState, createContext } from 'react'
 import ThemeButton from '../components/ThemeButton';
+import Product from '../components/Product';
 
 // open connection to other controls
 export const ThemeContext = createContext();
@@ -23,6 +24,8 @@ function Demo_useContext() {
                     <ThemeButton />
                 </ThemeContext.Provider>
             </div>
+
+            <Product />
         </>
     );
 }

@@ -6,7 +6,7 @@ import Home from './pages/Home'
 import About from './pages/About'
 import Contact from './pages/Contact'
 import Demo_useContext from './pages/Demo_useContext'
-import Product from './components/Product'
+
 
 export const cartContext = createContext();
 
@@ -15,12 +15,13 @@ function App() {
   const [cartCounter, setCartCounter] = useState(0);
   const addCart = () => setCartCounter(cartCounter + 1);
 
+
   return (
     <>
       <cartContext.Provider value={{ cartCounter, addCart }}>
         <BrowserRouter>
           <Navbar />
-          <Product />
+
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/About" element={<About />} />
