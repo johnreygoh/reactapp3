@@ -9,6 +9,10 @@ import Demo_useContext from './pages/Demo_useContext'
 import Demo_useReducer from './pages/Demo_useReducer'
 import ReducerDemo2 from './components/ReducerDemo2'
 import CustomHooks from './pages/CustomHooks'
+import FetchDemo from './pages/FetchDemo'
+import AxiosDemo from './pages/AxiosDemo'
+import AsyncDemo from './pages/AsyncDemo'
+import ReduxToolkitDemo from './pages/ReduxToolkitDemo'
 
 export const cartContext = createContext();
 
@@ -33,7 +37,10 @@ function App() {
             <Route path="/Demo_useReducer" element={<Demo_useReducer />} />
             <Route path="/Demo_useReducer/2" element={<ReducerDemo2 />} />
             <Route path="/CustomHooks" element={<CustomHooks />} />
-
+            <Route path="/FetchDemo" element={<FetchDemo />} />
+            <Route path="/AxiosDemo" element={<AxiosDemo />} />
+            <Route path="/AsyncDemo" element={<AsyncDemo />} />
+            <Route path="/ReduxToolkitDemo" element={<ReduxToolkitDemo />} />
           </Routes>
         </BrowserRouter>
       </cartContext.Provider>

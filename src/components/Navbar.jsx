@@ -27,6 +27,10 @@ function Navbar() {
             <NavLink to="/Demo_useContext" style={checkActive}>useContext</NavLink>
             <NavLink to="/Demo_useReducer" style={checkActive}>useReducer</NavLink>
             <NavLink to="/CustomHooks" style={checkActive}>CustomHooks</NavLink>
+            <NavLink to="/FetchDemo" style={checkActive}>FetchDemo</NavLink>
+            <NavLink to="/AxiosDemo" style={checkActive}>AxiosDemo</NavLink>
+            <NavLink to="/AsyncDemo" style={checkActive}>AsyncDemo</NavLink>
+            <NavLink to="/ReduxToolkitDemo" style={checkActive}>ReduxToolkitDemo</NavLink>
 
             <h4>🛒{cartCounter}</h4>
         </nav>
